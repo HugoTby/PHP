@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* $$ N01-02.100 $$ */
+body {
+  animation-name: backgroundColorPalette;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+/* Standard syntax */
+@keyframes backgroundColorPalette {
+  0% {
+    background: #ee6055;
+  }
+  25% {
+    background: #60d394;
+  }
+  50% {
+    background: #aaf683;
+  }
+  75% {
+    background: #ffd97d;
+  }
+  100% {
+    background: #ff9b85;
+  }
+}
+ body{
+    /*background-image: url(5.jpg);
+	background-color: #fffff;*/
+    background-size: cover;
+    
+    font-family: sans-serif;
+
+}
+/* $$ N01-02.100 $$ */
+
+/* N01-02.101 */
+.form-box{
+    
+    width: 500px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 12% auto;
+    padding: 50px 0;
+    color: #fff;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+}
+/* N01-02.101 */
+
+/* N01-02.101.1 */
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* N01-02.101.1 */
+
+/* N01-02.101.2 */
+/* N01-02.101.3 */
+.input-box{
+    margin: 31px auto;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    padding-top:  10px;
+    padding-bottom: 5px;
+}
+
+.input-box input{
+    width: 90%;
+    border:  none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+/* N01-02.101.2 */
+/* N01-02.101.3 */
+
+
+/* N01-02.101.3 */
+::placeholder{
+    color: #ccc;
+}
+
+.fa{
+    margin-right: 10px;
+}
+
+.eye{
+    position: absolute;
+}
+
+#hide1{
+    display: none;
+}
+/* N01-02.101.3 */
+
+/* N01-02.101.4 */
+.login-btn{
+    margin: 40px auto 20px;
+    width: 80%;
+    display: block;
+    outline: none;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+/* N01-02.101.4 */
+
+.login-btn{
+    margin: 40px auto 20px;
+    width: 80%;
+    display: block;
+    outline: none;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: transparent;
+    color: #red;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*.couleur_rouge{
+    color: red;
+
+}
+ 
+.form-box2{
+
+    width: 500px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 12% auto;
+    padding: 50px 0;
+    color: #fff;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+}
+*/

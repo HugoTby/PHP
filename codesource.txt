@@ -1,0 +1,330 @@
+//////////////////////////////////////
+*********** CODES SOURCES ************
+//////////////////////////////////////
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$    EXERCICE 1    $$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+    <?php 
+   
+    $Variable1 = "Une variable";
+    ?>
+            <div>
+            <?php            
+
+            $Variable1 = rand(0,100);
+            ?>
+
+            <div>
+                <?php
+                echo $Variable1;
+
+                if($Variable1%2==1){
+                    echo '<div class="var1">
+                    <h1>je suis impaire</h1>
+                </div>';
+
+                }else{
+                    echo '<div class="var2">
+                    <h1>je suis paire</h1>
+                </div>';
+                }
+                ?>
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$    EXERCICE 2    $$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+    <table border="2px" id="tab">
+        <caption>2.1</caption>
+
+    <?php
+            
+
+            
+            // 2.1
+            $i;
+            $legumes = array(25,42,47,24, 56);
+
+            
+
+            for ($i = 0; $i < sizeof($legumes); $i++)
+            {
+                echo "<tr><td>Element " .($i+1). " = " .$legumes[$i]. "</td></tr>";
+            }
+
+
+
+    
+    ?>
+
+
+
+</table>
+
+                    <div class="ex2_2">
+                    <?php
+
+                    // 2.2
+                    $identite = array(
+                                    
+                        
+                                
+                        'Nom' => 'Tabary', 
+                        'Prenom' => 'Hugo', 
+                        'MDP' => '1234', 
+
+
+                        
+                    );
+
+                    echo "<br>";
+                    echo "<h4>2.2</h4>";
+                    echo "Nom : " .$identite['Nom']."<br>";
+                    echo "Prenom : " .$identite['Prenom']."<br>";
+                    echo "MDP : " .$identite['MDP']."<br>";
+
+
+                    ?>
+
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$    EXERCICE 3    $$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+
+
+    <table border="1px" class="var1">
+        <caption>Tableau à double entrée en PHP</caption>
+
+    <?php
+
+    $a; $b;
+    $utilisateurs = array(
+        0 => array('Nom' => 'Tabary', 'Prénom' => 'Hugo', 'motDePass' => 'Sm2t4t59gYMF'),
+        1 => array('Nom' => 'Dimont', 'Prénom' => 'Louis', 'motDePass' => '4aJe5CFAp6d3'),
+        2 => array('Nom' => 'Dupuis', 'Prénom' => 'Justin', 'motDePass' => 's2E95V6iRFja'),
+        3 => array('Nom' => 'Baudet', 'Prénom' => 'Grégoire', 'motDePass' => '4jq9MjgYE5J5'),
+        4 => array('Nom' => 'Boffrand', 'Prénom' => 'Armand', 'motDePass' => '9MzU38Zbs2zU')
+        // Prénom, Nom et mot de passe aléatoire https://www.motdepasse.xyz/ - https://fr.fantasynamegenerators.com/noms-fran%C3%A7ais.php
+
+    );
+
+    for ($a = 0; $a < 5; $a++)
+    {
+
+    echo "<tr><td>" .$utilisateurs[$a]['Nom']. " - " .$utilisateurs[$a]['Prénom'].  " - " .$utilisateurs[$a]['motDePass']. "</td></tr>";
+    }
+
+    ?>
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$    EXERCICE 4    $$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+        <?php
+
+        $a = 2; $b = -9; $c = -5;
+        // Équation réalisé avec https://calculis.net/resoudre-equation-second-degre
+        $delta = pow($b, 2) - (4*$a*$a);
+        //b²-4ac
+        $x0 = -$b/(2*$a);
+        //Si 1 solution -> -b/2a
+        $x1 = (-$b+sqrt($delta))/(2*$a);
+        $x2 = (-$b-sqrt($delta))/(2*$a);
+        //Si 2 solutions -> (-b+Rd)/(2a)  et  (-b-Rd)/(2a) -> SQRT = racine
+
+        echo "<br> On cherche à résoudre l'équation <strong> ax²+bx+c </strong> avec pour valeurs :<br>A=<strong> 2</strong><br>B= <strong>-9</strong><br>C= <strong>-5</strong><br><br>";
+        //Consigne
+
+        if ($delta > 0)
+        //Si Delta > 0 alors 2 solutions
+        {
+            echo "L'équation admet deux solutions <strong>X1</strong> et <strong>X2</strong> qui sont : <br> X1= <strong>" .$x1. "</strong><br> X2 =<strong> ".$x2. "</strong>";
+        }
+        elseif ($delta == 0)
+        //Sinon si Delta est strictement = 0 alors 1 solutions
+        {
+            echo "L'équation n'admet qu'un solution X0 qui est :<br>".$x0;
+        }
+        elseif ($delta < 0)
+        //Sinon si Delta < 0 alors 0 solution
+        {
+            echo "L'équation donnée n'admet pas de solution :/ ";
+        }
+
+
+
+
+
+
+        ?>
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$    EXERCICE 5    $$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+        <form action="#" method="post">
+            <label>Veuillez saisir un numéro de téléphone :</label>
+            <input type="text" placeholder="ex : 06 32 48 56 98" name="numero">
+            <input type="submit" value="Confirmer">            
+        </form> <br>
+
+        <?php
+        echo "Le numéro de téléphone enregistré est le : <font color='red'>".$_POST["numero"]."</font>";
+        ?>
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$    EXERCICE 6    $$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+        <form action="#" method="get">
+            <label>Veuillez saisir un numéro de téléphone :</label>
+            <input type="text" placeholder="ex : 06 32 48 56 98" name="numero">
+            <input type="submit" value="Confirmer">            
+        </form> <br>
+
+        <?php
+        echo "Le numéro de téléphone enregistré est le : <font color='purple'>".$_GET["numero"]."</font>";
+        ?>
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$    EXERCICE 7    $$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+        <form action="ex7.php" method="post">
+            <label>Veuillez saisir un numéro de téléphone :</label>
+            <input type="text" placeholder="ex : 06 32 48 56 98" name="numero">
+            <input type="submit" value="Confirmer">            
+        </form> <br>
+
+        <?php
+
+        //Stockage de la variable
+            $_SESSION["User"] = $_POST["numero"];
+
+            if ($_SESSION["User"] == '')
+            {
+                echo "<font color='purple'> Impossible de trouver le numéro saisi, veuillez à nouveau saisir un numéro</font>";
+            }
+            else{
+                echo "Le numéro de téléphone enregistré est le : <font color='red'>".$_SESSION["User"]."</font>";
+            }
+
+        ?>
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$    EXERCICE 8    $$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+
+            <form action="ex7.php" method="post">
+                <label>Veuillez saisir un numéro de téléphone :</label>
+                <input type="text" placeholder="ex : 06 32 48 56 98" name="numero">
+                <input type="submit" value="Confirmer">  
+                <input type="reset" value="Supprimer">          
+            </form> <br>
+
+            <?php
+
+            //Stockage de la variable
+                $_SESSION["User"] = $_POST["numero"];
+
+                if ($_SESSION["User"] == '')
+                {
+                    echo "<font color='purple'> Impossible de trouver le numéro saisi, veuillez à nouveau saisir un numéro</font>";
+                }
+                else{
+                    echo "Le numéro de téléphone enregistré est le : <font color='red'>".$_SESSION["User"]."</font>";
+                }
+
+            ?>
+
+
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$  EXERCICE FINAL  $$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+    <form action="login.php" method="post">
+        <label>Username :</label>
+        <input type="text" place holder="Username" name="login" value="" required>
+        <label>Mot de passe :</label>
+        <input type="password" place holder="Password" name="password" value="" required>
+
+        <input type="submit" value="Connexion">
+        <input type="reset" value="Effacer">
+    </form>
+    
+
+    <?php
+
+        function renvoi($login, $password)
+        {
+        
+        
+            if ($login == "Julien" and $password == "1234")
+            {
+                header("location: reussite.php");
+                //Si réussite renvoyer vers -> reussite.php
+            }
+
+            elseif ($login != "Julien")
+            {
+                //Si echec renvoyer :
+                echo "<p style='color:purple;'>L'Username entré est incorrect.</p>";
+            }
+            elseif ($password != "1234")
+            {
+                //Si echec renvoyer :
+                echo "<p style='color:purple;'>Le password est incorrect.</p>";
+            }
+        
+        }
+    ?>
+
+
+
+
+
+    // -> Disconnect.php
+
+        <?php
+    session_start();
+
+    session_destroy();
+    header('Location: final.php');
+    ?>
+
+
+
+
+    // -> Login.php
+
+        <?php
+    session_start();
+    include("final.php");
+    $_SESSION["Login"] = $_POST['login'];
+    $_SESSION["Password"] = $_POST['password'];
+    echo renvoi($_SESSION["Login"], $_SESSION["Password"]);
+    ?>
