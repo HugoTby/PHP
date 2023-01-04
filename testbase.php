@@ -8,6 +8,9 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
+<style>
+    .bulle{padding:2px;background-color:grey;border-radius:0.5em;margin-right:80%;}
+</style>
 <body>
 
     <form action="?connection-reussie" method="post">
@@ -29,14 +32,13 @@
 
         $GLOBALS["pdo"] = new PDO('mysql:host=' . $ipserver . ';dbname=' . $nomBase . '', $loginPrivilege, $passPrivilege);
 
-        $requete = 0;
 
         if  (isset($_POST["REQUETESUB"])){
             $resultat = $GLOBALS["pdo"]->query($_POST["REQUETE"]);
 
             if ($resultat->rowCount() > 0) {
                 while($tab = $resultat->fetch()){
-                    echo "Le nom est :".$tab["nom"]." id : ".$tab["id"]."<br>";
+                    echo "<div class='bulle'><h1 style='color:black; font-size:15px;'>Le <strong>nom</strong> du médicament est : <mark>".$tab["nom"]."</mark> <br>Son <strong>id</strong> : <mark>".$tab["id"]."</mark></h1></div><br>";
                 }
             }
         }
