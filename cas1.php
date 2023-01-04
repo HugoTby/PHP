@@ -3,7 +3,7 @@
 <?php
 
     session_start(); //Initialisation de la session utilisateur
-    $erreur = "";
+   
 
 
 
