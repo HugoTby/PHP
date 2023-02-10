@@ -7,7 +7,7 @@
 
         //méthodes
         public function afficheUser(){
-            echo "Je suis un User";
+            echo "<div class='div'>Je suis un User</div>";
         }
     }
 

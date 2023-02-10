@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .div{justify-content: center;text-align: center;align-items: center;padding-top: 15%;}
+    .div2{padding-left: 43%;}
+    strong{color:green;}
+    pre{border: 1px solid lightgray;box-sizing: border-box;border-radius: 5px 5px 5px 5px;width: 25%;}
+</style>
 <body>
     <?php
 
@@ -18,18 +24,17 @@
     ?>
 
 
-
+<div class="div2">
     <pre style="color:red" >
 
-    //tp3_ex1.php
+        <strong>//tp3_ex1.php</strong>
     include("user.php");
 
     $user1 = new user();
-
     $user1->afficheUser();
 
 
-    //user.php
+        <strong>//user.php</strong>
     class user{
         //propriétés
         private $prenom;
@@ -41,6 +46,7 @@
         }
     }
     </pre>
+</div>
 
 
 
