@@ -29,8 +29,7 @@
 
 
 <body>
-<a href="index2.php">RETOUR MENU</a>
-    <h1> Exercice 5 </h1>
+<a href="/tdphp.php">RETOUR MENU</a>    <h1> Exercice 5 </h1>
 
     <!-- Créer un petit formulaire avec une zone de text et un bouton. Lorsque vous cliquer sur le
         bouton la page doit afficher ce que vous avez saisie en rouge.  -->

@@ -33,8 +33,7 @@
 
 
 <body>
-<a href="index2.php">RETOUR MENU</a>
-    <h1> Exercice 4 </h1>
+<a href="/tdphp.php">RETOUR MENU</a>    <h1> Exercice 4 </h1>
 
     <!--  Créer un petit programme php qui résout une équation du second degré de type Ax2 + Bx + C = 0 -->
 

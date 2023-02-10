@@ -27,8 +27,7 @@
 
 
 <body>
-<a href="index2.php">RETOUR MENU</a>
-    <h1> Exercice 3 </h1>
+<a href="/tdphp.php">RETOUR MENU</a>    <h1> Exercice 3 </h1>
     <!-- Tableau à double entrée en PHP -->
 
 

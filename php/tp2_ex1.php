@@ -15,8 +15,7 @@
 </style>
 
 <body>
-    <a href="index2.php">RETOUR MENU</a>
-
+<a href="/tdphp.php">RETOUR MENU</a>
 
     <?php 
     

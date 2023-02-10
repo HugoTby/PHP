@@ -30,8 +30,7 @@
 
 
 <body>
-<a href="index2.php">RETOUR MENU</a>
-    <h1> Exercice FINAL </h1>
+<a href="/tdphp.php">RETOUR MENU</a>    <h1> Exercice FINAL </h1>
 
     <form action="login.php" method="post">
         <label>Username :</label>

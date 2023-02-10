@@ -29,8 +29,7 @@
 
 
 <body>
-<a href="index2.php">RETOUR MENU</a>
-        <h1> Exercice 8 </h1>
+<a href="/tdphp.php">RETOUR MENU</a>        <h1> Exercice 8 </h1>
 
         <!-- Reprenez l’exercice 7 et rajouter un bouton qui permet lorsque l’on clique dessus de
 vider la session  -->

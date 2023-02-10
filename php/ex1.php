@@ -26,7 +26,7 @@
 
 
 <body>
-<a href="index2.php">RETOUR MENU</a>
+<a href="/tdphp.php">RETOUR MENU</a>
     <h1> Exercice 1 </h1>
 
     
