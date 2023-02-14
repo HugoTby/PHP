@@ -24,6 +24,7 @@
     ?>
 
 
+
 <div class="div2">
     <pre style="color:red" >
 
@@ -46,6 +47,10 @@
         }
     }
     </pre>
+
+    <style type="text/css">.tg  {border-collapse:collapse;border-spacing:0;}.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}.tg .tg-hdsp{background-color:#9f87b1;text-align:left;vertical-align:top}.tg .tg-at11{background-color:#9f87b1;text-align:center;vertical-align:top}</style>
+    <table class="tg" style="table-layout: fixed; width: 319px"><colgroup><col style="width: 319px"></colgroup><thead><tr><th class="tg-at11">User<br></th></tr></thead><tbody><tr><td class="tg-hdsp">-Nom : String<br>-Prenom : String<br></td></tr><tr><td class="tg-hdsp">+AfficheUser() : void<br></td></tr></tbody></table>
+
     <a href="/tdphp.php">RETOUR MENU</a>
 </div>
 </body>
