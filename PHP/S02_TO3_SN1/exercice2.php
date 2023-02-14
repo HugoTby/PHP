@@ -19,7 +19,7 @@
 
     $user1 = new personnage();
 
-    echo"<div class='div'>Je suis <strong>user1 </strong> et j'ai <strong>". $user1->GetVie() ."</strong> de points de vie</div>";
+    $user1->GetVie();
 
     ?>
 
@@ -31,7 +31,7 @@
     include("personnage.php");
 
     $user1 = new personnage();
-    echo"Je suis user1 et j'ai". $user1->GetVie() ." de points de vie";
+    $user1->GetVie();
 
 
         <strong>//personnage.php</strong>
@@ -45,7 +45,7 @@
             $this->vie = 100;
         }
         public function GetVie(){
-            return $this->vie;
+            echo"Je suis user1 et j'ai ". $this-> vie." de points de vie";
         }
     }
     </pre>

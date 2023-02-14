@@ -10,7 +10,7 @@
             $this->vie = 100;
         }
         public function GetVie(){
-            return $this->vie;
+            echo"<div class='div'>Je suis <strong>user1 </strong> et j'ai <strong>". $this-> vie."</strong> de points de vie</div>";
         }
     }
 
@@ -23,8 +23,8 @@
         private $vie;
 
         //méthodes
-        public function __construct($vie, $pseudo){
-            $this-> vie = $vie;
+        public function __construct($pseudo){
+            $this->vie = 100;
             $this-> pseudo = $pseudo;
         }
         public function affichePseudoVie(){

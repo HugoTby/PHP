@@ -17,7 +17,7 @@
 
     include("classes/personnage.php");
 
-    $user1 = new personnage2(100, 'Julien');
+    $user1 = new personnage2('Julien');
 
     $user1->affichePseudoVie();
 
@@ -30,7 +30,7 @@
         <strong>//tp3_ex2.php</strong>
     include("personnage.php");
 
-    $user1 = new personnage(100, 'Julien');
+    $user1 = new personnage2('Julien');
     $user1->affichePseudoVie();
 
 
@@ -41,12 +41,12 @@
         private $vie;
 
         //méthodes
-        public function __construct($vie, $pseudo){
-            $this-> vie = $vie;
+        public function __construct($pseudo){
+            $this->vie = 100;
             $this-> pseudo = $pseudo;
         }
         public function affichePseudoVie(){
-            echo "Je suis <strong>".$this-> pseudo."</strong> et j'ai <strong>".$this-> vie."</strong> de points de vie";
+            echo "Je suis ".$this-> pseudo." et j'ai ".$this-> vie." de points de vie";
         }
     }
     </pre>
