@@ -30,7 +30,7 @@
         <strong>//tp3_ex2.php</strong>
     include("personnage.php");
 
-    $user1 = new personnage2('Julien');
+    $user1 = new personnage('Julien');
     $user1->affichePseudoVie();
 
 

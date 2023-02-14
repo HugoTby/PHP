@@ -33,4 +33,40 @@
     }
 
 
+
+    class personnage3{
+        //propriétés
+        private $pseudo;
+        private $vie;
+
+        //méthodes
+        public function __construct($pseudo){
+            $this->vie = 100;
+            $this-> pseudo = $pseudo;
+        }
+        public function afficheVie(){
+            return $this->vie;
+        }
+        public function affichePseudo(){
+            return $this->pseudo;
+        }
+
+        public function attaque($cible){
+            $cible->defense(50);
+            echo "<div class=''>Oh non !<br> <strong>".$this->affichePseudo()."</strong> a décider d'attaquer <strong>".$cible->affichePseudo()."</strong> !<br> <strong>".$this->affichePseudo()."</strong> à donc <strong>".$this->afficheVie()."</strong> de points de vie et <strong>".$cible->affichePseudo()."</strong> à donc <strong>".$cible->afficheVie()."</strong> de points de vie !</div>";
+        }
+
+        public function defense($attaque) {
+            $this->vie -= $attaque;
+            echo $this->pseudo . " subit <strong>" . $attaque . "</strong> points de dégâts<br>";
+        }
+
+    }
+
+
+
+    
+    
+
+
 ?>
