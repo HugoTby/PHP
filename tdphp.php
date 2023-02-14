@@ -259,19 +259,19 @@ mark{
         </li>
         <li>
           <input type="checkbox" checked="checked" id="3" />
-          <label for="c2" class="tree_label" onclick="window.location.href='PHP/S02_TO3_SN1/exercice3.php'" style="color: orange";><mark>Exercice 3 25%</mark></label>
+          <label for="c2" class="tree_label" onclick="window.location.href='PHP/S02_TO3_SN1/exercice3.php'" style="color: green";>Exercice 3</label>
         </li>
         <li>
           <input type="checkbox" checked="checked" id="3" />
-          <label for="c2" class="tree_label" onclick="window.location.href='PHP/S02_TO3_SN1/exercice4.php'" style="color: red";>Exercice 4</label>
+          <label for="c2" class="tree_label" onclick="window.location.href='PHP/S02_TO3_SN1/exercice4.php'" style="color: green";>Exercice 4</label>
         </li>
         <li>
           <input type="checkbox" checked="checked" id="3" />
-          <label for="c2" class="tree_label" onclick="window.location.href='PHP/S02_TO3_SN1/exercice5.php'" style="color: red";>Exercice 5</label>
+          <label for="c2" class="tree_label" onclick="window.location.href='PHP/S02_TO3_SN1/exercice5.php'" style="color: green";>Exercice 5</label>
         </li>
         <li>
           <input type="checkbox" checked="checked" id="3" />
-          <label for="c2" class="tree_label" onclick="window.location.href='PHP/S02_TO3_SN1/exercice6.php'" style="color: red";>Exercice 6</label>
+          <label for="c2" class="tree_label" onclick="window.location.href='PHP/S02_TO3_SN1/exercice6.php'" style="color: orange";><mark>Exercice 6 25%</mark></label>
         </li>
         <li>
           <input type="checkbox" checked="checked" id="3" />
