@@ -8,7 +8,7 @@ function fr($ipRefused){
                 <div class='error'>
                     Vous n'êtes pas autorisé à accéder à la ressource souhaitée<br><br>
                     Le site à renvoyé l'erreur <strong><mark style='border-radius:2px;padding:2px'>".$ipRefused."</mark></strong><br><br>
-                    Pour corriger cette erreur, veuillez contacter un administrateur de site ou votre administrateur réseau.
+                    Pour corriger cette erreur, veuillez contacter un administrateur du site ou votre administrateur réseau.
                 </div>
             </div>
     </div>";
@@ -61,7 +61,7 @@ function black_list($ip_adress_list,$ip,$blacklist){
                 <div class='error'>
                     Vous n'êtes pas autorisé à accéder à la ressource souhaitée<br><br>
                     Le site à renvoyé l'erreur <strong><mark style='border-radius:2px;padding:2px'>".$ip_adress_list."</mark></strong><br><br>
-                    Pour corriger cette erreur, veuillez contacter un administrateur de site ou votre administrateur réseau.
+                    Pour corriger cette erreur, veuillez contacter un administrateur du site ou votre administrateur réseau.
                 </div>
             </div>
     </div>";
