@@ -35,6 +35,7 @@
             //Affiche en Français par défaut
             $ip_adress_list = $blacklist[$ip];
             black_list($ip_adress_list,$ip,$blacklist);
+            exit();
         }
         else {
             $ipRefused = "&nbspDenied IP Adress ".$ip. "&nbsp";
@@ -58,7 +59,11 @@
             
 
             if ($ip == '127.0.0.1') {
-                        echo"test";
+                        $language = 'fr';
+                        $country = 'FR';
+                        //Affiche en Français par défaut
+                        $ip_adress_list = $blacklist[$ip];
+                        black_list($ip_adress_list,$ip,$blacklist);
                       } else if ($language == 'fr') {
                         //Affiche en Français
                         fr($ipRefused);                     
@@ -77,7 +82,8 @@
                       } else {
                         //Affiche en Français par défaut
                         fr($ipRefused);
-            }        
+            } 
+            exit();       
         }
         ?>
         

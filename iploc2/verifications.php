@@ -11,10 +11,17 @@ $ip = $_SERVER['REMOTE_ADDR']; // Récupère l'adresse IP de l'utilisateur
 
 
 
+if (array_key_exists($ip, $blacklist)) {
+  $language = 'fr';
+  $country = 'FR';
+  //Affiche en Français par défaut
+  $ip_adress_list = $blacklist[$ip];
+  black_list($ip_adress_list,$ip,$blacklist);
+  exit();
+}
 
 
-
-if (!in_array($ip, $whitelist)) {
+else if (!in_array($ip, $whitelist)) {
     // Redirige l'utilisateur vers une page d'erreur ou affiche un message d'erreur
     $ipRefused = "&nbspDenied IP Adress ".$ip. "&nbsp";
             
@@ -57,10 +64,9 @@ if (!in_array($ip, $whitelist)) {
                         //Affiche en Français par défaut
                         fr($ipRefused);
             }
+            exit();
 }
-// else if ($ip == in_array($ip, $whitelist)) {
-//     echo "Bonjour !";
-// }
+
 
 
 
