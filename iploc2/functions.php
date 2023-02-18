@@ -66,6 +66,19 @@ function black_list($ip_adress_list,$ip,$blacklist){
             </div>
     </div>";
 }
+function kr($ipRefused){
+    echo "
+    <div class='center'>
+            <div style='background-color: rgba(255, 0, 0, 0.35);padding: 15px;border-radius: 5px;' >
+                <img style='max-width: 400px;'' src='403-error.png' ></img><br><br>
+                <div class='error'>
+                    원하는 리소스에 액세스할 수 있는 권한이 없습니다.<br><br>
+                    사이트에서 오류를 반환했습니다 <strong><mark style='border-radius:2px;padding:2px'>".$ipRefused."</mark></strong><br><br>
+                    이 오류를 수정하려면 사이트 관리자나 네트워크 관리자에게 문의하십시오.
+                </div>
+            </div>
+    </div>";
+}
 
 
 
