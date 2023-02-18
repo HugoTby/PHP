@@ -50,6 +50,9 @@ if (!in_array($ip, $whitelist)) {
                       } else if ($language == 'jp') {
                         //Affiche en Japonais
                         jp($ipRefused);
+                      } else if ($language == 'kr') {
+                        //Affiche en Coréen
+                        kr($ipRefused);
                       } else {
                         //Affiche en Français par défaut
                         fr($ipRefused);
