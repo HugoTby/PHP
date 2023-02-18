@@ -5,6 +5,7 @@ $languagesByCountry = array(
     'FR' => 'fr', // France
     'JP' => 'jp', // Japon
     'US' => 'us', // États-unis
+    'KR' => 'kr', // Corée du Sud
     // ajouter d'autres pays et leurs langues associées ici
 );
 
