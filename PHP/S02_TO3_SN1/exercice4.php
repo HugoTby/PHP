@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <style>
-    .div{justify-content: center;text-align: center;align-items: center;padding-top: 15%;}
+    .div{justify-content: center;text-align: center;align-items: center;padding-top: 5%;}
     .div2{padding-left: 33%;}
     strong{color:green;}
     pre{border: 1px solid lightgray;box-sizing: border-box;border-radius: 5px 5px 5px 5px;width: 55%;}
@@ -37,7 +37,7 @@
 <div class="div2">
     <pre style="color:red" >
 
-        <strong>//tp3_ex2.php</strong>
+        <strong>//tp3_ex4.php</strong>
     include("personnage.php");
 
     $Personnage1 = new personnage3("Hugo");

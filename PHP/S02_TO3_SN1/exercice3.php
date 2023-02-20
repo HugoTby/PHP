@@ -27,7 +27,7 @@
 <div class="div2">
     <pre style="color:red" >
 
-        <strong>//tp3_ex2.php</strong>
+        <strong>//tp3_ex3.php</strong>
     include("personnage.php");
 
     $user1 = new personnage('Julien');

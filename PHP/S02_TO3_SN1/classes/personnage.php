@@ -65,6 +65,60 @@
 
 
 
+
+    class personnage4{
+        //propriétés
+        private $pseudo;
+        private $vie;
+        private $id;
+
+
+
+        // Constructeur
+       public function __construct($conn, $id)
+       {
+        if ($conn) { // Si la connexion à la bdd est réussie
+            $stmt = $conn->prepare("SELECT * FROM personnage WHERE id = ?");
+            $stmt->bind_param("i", $id);
+            $stmt->execute();
+            $result = $stmt->get_result();
+
+            if($result != false)
+            {
+                $row_count = $result->num_rows;
+                if($row_count > 0)
+                {
+                    $tabPersonnages = $result->fetch_assoc();
+
+                    $this->id = $tabPersonnages["id"];
+                    $this->pseudo = $tabPersonnages["pseudo"];
+                    $this->vie = $tabPersonnages["vie"];
+                }
+            }
+        }
+        }
+
+        //méthodes
+        public function afficheId()
+        {
+             return $this->id;
+        }
+
+        public function afficheVie(){
+            return $this->vie;
+        }
+        public function affichePseudo(){
+            return $this->pseudo;
+        }
+
+        public function affichePseudoVie()
+        {
+            echo "<p>Le Personnage n°<strong>".$this->id."</strong> s'appelle <strong>".$this->pseudo."</strong> . Actuellement, il a <strong>".$this->vie."</strong> de points de vie.</p>";
+        }
+    }
+
+
+
     
     
 
